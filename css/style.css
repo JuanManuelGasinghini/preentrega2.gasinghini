@@ -1,0 +1,557 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Lora, Montserrat, serif;
+    box-sizing: border-box;
+    /* border: 2px solid;  */
+}
+
+
+h1{
+    font-family: lora, serif;
+    font-weight: 700;
+    font-size: 60px;
+    background-color: beige;
+    color: green;
+    /* 
+    background-image: url(../assets/fondo.jpg); */
+    text-align: center;
+}
+
+h2{
+    font-family: lora, serif;
+    font-weight: 600;
+    font-size: 40px;
+
+    text-align: center;
+}
+
+h3{
+    font-family: lora, serif;
+    font-weight: 400;
+    font-size: 25px;
+
+    text-align: center;
+}
+
+p{
+    font-weight: 400;
+font-family: Lora, serif ;
+
+line-height: 1.5;
+}
+
+/* -----header ---*/
+
+.header {
+    background-color: whitesmoke;
+    padding: 15x;
+    position: absolute;
+    width: 100vw;
+}
+
+.header_title{
+    text-align: center;
+
+}
+
+.header_logo{
+    background-color: beige;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header_logo img{
+    padding: 5px;
+    width: 45px;
+}
+
+
+.header_nav ul{
+    background-color: beige;
+    display: flex;
+    justify-content: space-around;
+    }
+
+    /* hero-----section */
+
+.hero{
+height: 96vh;
+    background-image: url(../assets/fondohero10.jpg);
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.hero__texto{
+color: beige;
+text-align: center;
+background-color: green;
+padding: 30px;
+border-radius: 20px ;
+}
+
+.hero__texto h1{
+text-align: center;
+}
+
+.cuerpo-general{
+    align-items: center;
+    padding: 20px;
+}
+
+   /* -------seccion consultorios */
+/* 
+   .consultorios{
+    grid-area: productos;
+}
+ */
+.consultorios_title{
+background-color: papayawhip;
+text-align: center;
+padding: 14px;
+}
+
+.slider-productos{
+    display: flex;
+}
+
+
+.consultorios_contenedor{
+padding: 10px;
+
+display: flex;
+overflow-x: auto;
+gap: 20px;
+
+}
+
+.tarjeta{
+background-color:papayawhip;
+border: solid 2px black;
+border-radius: 20px;
+width: 180px;
+padding: 50px;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+}
+
+.tarjeta_img{
+    width: 100%;
+    height: 200px;
+}
+
+.tarjeta_title{
+text-align: center;
+padding: 10px;
+}
+
+.tarjeta_boton{
+padding: 13px 8px;
+border: 2px solid black;
+background-color: white;
+color: black;
+text-align: center;
+border-radius: 20px;
+}
+
+/* ----consult2 */
+.consultorios2_title{
+    background-color: papayawhip;
+    text-align: center;
+    padding: 14px;
+    }
+    
+    .slider-productos{
+        display: flex;
+    }
+    
+    
+    .consultorios2_contenedor{
+    padding: 10px;
+    
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    
+    }
+    
+    .tarjetac2{
+    background-color:papayawhip;
+    border: solid 2px black;
+    border-radius: 20px;
+    width: 180px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    }
+    
+    .tarjetac2_img{
+        width: 100%;
+        height: 200px;
+    }
+    
+    .tarjetac2_title{
+    text-align: center;
+    padding: 10px;
+    }
+    
+    .tarjetac2_boton{
+    padding: 13px 8px;
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border-radius: 20px;
+    }
+
+
+/* ----seccion plantel/quienes somos */
+
+.plantel_titulo{
+ 
+    background-color: blueviolet;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.plantel{
+
+    border: 2px solid black;
+    width: 550px;
+
+    display: flex;
+}
+
+.plantel_contenedor{
+    display: flex;
+    flex-direction: column;
+ 
+}
+
+.plantel_boton{
+    text-align: end;
+}
+
+/* caja 2 misma html */
+
+.plantel2_titulo{
+    background-color: blueviolet;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.plantel2{
+    border: 2px solid black;
+    width: 550px;
+
+    display: flex;
+}
+
+.plantel2_contenedor{
+    display: flex;
+    flex-direction: column;
+}
+
+.plantel2_boton{
+    text-align: end;
+}
+
+/* seccion------servicios */
+
+.tarjetaservicio{
+min-width: 300px;
+ height: 350px;
+    border: 2px solid black; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 15px;
+}
+
+.servicios_titulo{
+    color: black;
+    width: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    }
+
+.tarjetaservicio_img{
+    width: 100%;
+    height: 200px;
+}
+
+.tarjetaservicio_boton{
+    background-color: blueviolet;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 20px;
+}
+
+.tarjetaservicio_boton:hover{
+    border: blueviolet 2px solid;
+    background-color: white;
+    color: blueviolet;
+}
+
+
+
+    .slider-servicios{
+        display: flex;
+        padding: 20px;
+        gap: 20px;
+            overflow-x: auto;
+    }
+
+
+
+
+    /* contacto-----
+    .tarjeta {
+        width: 300px;
+        height: 350px;
+      
+        border: 2px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+      }
+      
+      .tarjeta__img {
+        width: 100%;
+      }
+      
+      .tarjeta__boton {
+        background-color: blueviolet;
+        color: white;
+        padding: 15px 20px;
+        border-radius: 20px;
+      }
+      
+      .tarjeta__boton:hover {
+        border: blueviolet 2px solid;
+        background-color: white;
+        color: blueviolet;
+      }
+      */
+      .contenedor_contacto{
+        display: flex;
+        height: 100vh;
+        background-color: beige;
+        flex-direction: column;
+    /* flex-wrap: wrap; */
+    /* flex-flow: row wrap; */
+    justify-content: space-evenly;
+     align-items: center;
+    align-content: stretch;
+    border: 2px black solid;
+    }
+    /*
+     .caja-ordenada{
+        width: 100px;
+        height: 100px;
+        font-size: 3rem;
+        background-color: red;
+        border: 2px black solid;
+    }
+    
+    
+    .caja-ordenada{ 
+    align-self: stretch;
+    order: -1;
+    }
+     */
+     .caja1{
+        order: 1;
+        height: 50vh;
+        width: 100vh;
+        border: 2px black solid;
+        background-color: green;
+    }
+
+    .caja2{
+        order: 1;
+        height: 50vh;
+        width: 100vh;
+        border: 2px black solid;
+        background-color:green;
+    }
+
+    .caja3{
+        order: 2;
+        height: 50vh;
+        width: 100vh;
+        border: 2px black solid;
+        background-color: green;
+    }
+
+    .caja4{
+        order: 3;
+        height: 50vh;
+        width: 100vh;
+        border: 2px black solid;
+        background-color: green;
+    }
+
+    .caja5{
+        order: 4;
+        height: 50vh;
+        width: 100vh;
+        border: 2px black solid;
+        background-color: green;}
+
+
+
+      /* -----consulta en e index */
+
+      .consulta{
+        width: 100vh;
+        height: 100vh;
+        background-color: aqua;
+        border: 2px solid black;
+        display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+      }
+
+.consulta-titulo{
+    color: black;
+    width: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.tarjeta__img{
+    width: 100px;
+    height: 200px;
+}
+
+.tarjeta__texto{
+    color: green;
+}
+
+.boton-consulta{
+    background-color: blueviolet;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 20px;
+}
+
+.boton-consulta:hover{
+    border: blueviolet 2px solid;
+    background-color: white;
+    color: blueviolet;
+    padding: 15px 20px;
+}
+
+
+/* -------presentación----- */
+.presentacion{
+        width: 100vh;
+        height: 100h;
+        background-color: aqua;
+        border: 2px solid black;
+        display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+padding: 15px 15px;
+  }
+
+.presentacion-titulo{
+color: black;
+width: 3rem;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+}
+.tarjeta__img{
+width: 100%;
+height: 200px;
+}
+
+.presentacion-texto{
+color: green;
+}
+
+/* --------ubicación--------- */
+.ubicacion{
+    width: 100vh;
+    height: 100vh;
+    background-color: aqua;
+    border: 2px solid black;
+    display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+padding: 15px 15px;
+}
+
+.ubicacion-title{
+color: green;
+width: 3rem;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+}
+
+.ubicación-tarjeta{
+width: 100%;
+height: 100%;
+}
+
+
+      /* ------footer------- */
+.redes_title{
+  color: green;
+    padding: 15x;
+}
+
+      .redes {
+        background-color: beige;
+        padding: 15x;
+position: relative;
+justify-content: first baseline;
+        width: 100vw;
+        height: 20vh;
+      }
+
+      .bi-whatsapp{
+        background-color: violet;
+          padding: 15px;
+        width: 30vw;
+        height: 5vh;
+      }
+
+      .bi-instagram{
+        background-color: yellow;
+        padding: 15px;
+      width: 30vw;
+      height: 5vh;
+      }
+
+      .bi-facebook{
+        background-color: orangered;
+        padding: 15px;
+      width: 30vw;
+      height: 5vh;
+        
+      }
+
