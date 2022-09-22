@@ -6,6 +6,10 @@
     /* border: 2px solid;  */
 }
 
+body{
+    background-color: aqua;
+
+}
 
 h1{
     font-family: lora, serif;
@@ -68,6 +72,7 @@ line-height: 1.5;
 }
 
 
+
 .header_nav ul{
     background-color: beige;
     display: flex;
@@ -99,8 +104,12 @@ text-align: center;
 }
 
 .cuerpo-general{
+    display: flex;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
     padding: 20px;
+
 }
 
    /* -------seccion consultorios */
@@ -210,8 +219,21 @@ border-radius: 20px;
     color: black;
     text-align: center;
     border-radius: 20px;
-    }
+        }
 
+        @media(min-width 768px){
+            .consultorios2_title {
+                display: grid;
+                grid-template-columns: repeat(2,45%);
+                grid-template-rows: 50vh repeat(2.45vh); 
+            }
+        }
+    /* .slider-consultorios_contenedor{ 
+        display: flex;
+        padding: 20px;
+        gap: 20px;
+            overflow-x: auto;
+    }*/
 
 /* ----seccion plantel/quienes somos */
 
@@ -234,13 +256,19 @@ border-radius: 20px;
 .plantel_contenedor{
     display: flex;
     flex-direction: column;
- 
 }
 
 .plantel_boton{
     text-align: end;
 }
-
+/*  
+@media (min-width 768px){
+    .plantel_titulo{
+        display: grid;
+        grid-template-columns: repeat(2,45%);
+    }
+}
+*/
 /* caja 2 misma html */
 
 .plantel2_titulo{
@@ -265,6 +293,15 @@ border-radius: 20px;
 .plantel2_boton{
     text-align: end;
 }
+
+@media(min-width 768px){
+    .plantel2{
+        display: grid;
+        grid-template-columns: repeat(2,45%);
+        grid-template-rows: 50vh repeat(2.45vh);
+    }
+}
+
 
 /* seccion------servicios */
 
@@ -418,27 +455,29 @@ min-width: 300px;
       /* -----consulta en e index */
 
       .consulta{
-        width: 100vh;
-        height: 100vh;
-        background-color: aqua;
+        width: 100%;
+        height: 100%;
+        background-color: aqua; 
         border: 2px solid black;
         display: flex;
 flex-direction: column;
-justify-content: space-around;
+justify-content: center;
 align-items: center;
+
       }
 
 .consulta-titulo{
     color: black;
     width: 3rem;
+    /* margin: 20px auto; */
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 .tarjeta__img{
-    width: 100px;
-    height: 200px;
+    width: 25px;
+    height: 25px;
 }
 
 .tarjeta__texto{
@@ -462,13 +501,13 @@ align-items: center;
 
 /* -------presentación----- */
 .presentacion{
-        width: 100vh;
-        height: 100h;
-        background-color: aqua;
+        width: 100%; 
+        height: 100%; 
+        background-color: aqua; 
         border: 2px solid black;
         display: flex;
 flex-direction: column;
-justify-content: space-around;
+justify-content: center;
 align-items: center;
 padding: 15px 15px;
   }
@@ -476,13 +515,14 @@ padding: 15px 15px;
 .presentacion-titulo{
 color: black;
 width: 3rem;
+/* margin: 20px auto; */
 display: flex;
 flex-direction: column;
-justify-content: space-around;
+justify-content: center;
 align-items: center;
 }
 .tarjeta__img{
-width: 100%;
+width: 200px;
 height: 200px;
 }
 
@@ -490,15 +530,26 @@ height: 200px;
 color: green;
 }
 
+@media(min-width 768px){
+    .presentacion{
+        display: grid;
+        grid-template-columns: repeat(2,45%);
+        grid-template-rows: 50vh repeat(2.45vh);
+    }
+}
+
+
+
 /* --------ubicación--------- */
 .ubicacion{
-    width: 100vh;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-color: aqua;
     border: 2px solid black;
+    /* margin: 20px auto; */
     display: flex;
 flex-direction: column;
-justify-content: space-around;
+justify-content: center;
 align-items: center;
 padding: 15px 15px;
 }
@@ -513,13 +564,21 @@ align-items: center;
 }
 
 .ubicación-tarjeta{
-width: 100%;
-height: 100%;
+width: 300px;
+height: 300px;
 }
 
 
       /* ------footer------- */
+      .footer-redes{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 15px;
+      }
 .redes_title{
+    margin: 12px;
   color: green;
     padding: 15x;
 }
@@ -543,7 +602,7 @@ justify-content: first baseline;
       .bi-instagram{
         background-color: yellow;
         padding: 15px;
-      width: 30vw;
+       width: 30vw;
       height: 5vh;
       }
 
