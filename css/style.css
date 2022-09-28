@@ -143,7 +143,7 @@ text-align: center;
 }
  */
 .consultorios_title{
-background-color: papayawhip;
+    background: linear-gradient(to left, white,rgb(158, 158, 94));
 text-align: center;
 padding: 14px;
 }
@@ -195,7 +195,7 @@ border-radius: 20px;
 
 /* ----consult2 */
 .consultorios2_title{
-    background-color: papayawhip;
+    background: linear-gradient(to left, white,rgb(158, 158, 94));
     text-align: center;
     padding: 14px;
     }
@@ -215,7 +215,8 @@ border-radius: 20px;
     }
     
     .tarjetac2{
-    background-color:papayawhip;
+        /* background: linear-gradient(to left, yellow, beige ); */
+     background-color:papayawhip; 
     border: solid 2px black;
     border-radius: 20px;
     width: 180px;
@@ -391,14 +392,14 @@ min-width: 300px;
 .cajacons{
     width: 200px;
     height: 200px;
-    background-color: whitesmoke;
+    background: linear-gradient(to left, white, beige );
     border: solid 2px black;
     font-size: 3rem;
 }
 
 @media (min-width:480px){
     .cajacons{
-        background-color:beige;
+        background:linear-gradient( to right, beige white); 
         width: 90%;
     }
 }
@@ -564,14 +565,14 @@ padding: 15px 15px;
 
       /* ------footer------- */
       .footer{
-        background-color: beige;
+        background: linear-gradient(to left, white,rgb(158, 158, 94));
         width: 100%;
         display: flex;
         flex-direction: row;
         padding: 15px 15px;
       }
       .redes{
-        background-color: beige;
+        background: linear-gradient(to left, white,rgb(158, 158, 94));
         color: green;
         padding: 15x;
 align-items: flex-start;
@@ -605,3 +606,9 @@ align-items: flex-end;
         
       }
 
+.novedades{
+    background-color: red;
+}
+.eventos{
+    background-color: green;
+}
