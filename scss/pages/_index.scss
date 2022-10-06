@@ -13,3 +13,121 @@ $color-secundario: aqua;
     }
 }
 
+@mixin flex-center{
+    background-color: beige; 
+    border: 2px solid black;
+    display: flex;
+    
+}
+.consulta{
+    @include flex-center();
+
+}
+
+.consulta__titulo{
+justify-content: center;
+color: black;
+ width: 50%;
+ height: 50%;
+ margin: 20px auto; 
+display: flex; 
+flex-direction: column; 
+}
+.tarjeta__img{
+width: 25px;
+height: 25px;
+display: none;
+}
+
+@media(min-width:810px){
+.tarjeta__img{ display: block;
+}
+}
+
+.presentacion{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+        background-color: beige; 
+        border: 12px solid black;
+padding: 15px;
+display: none;
+  }
+
+.presentacion__titulo{
+
+     color: black;
+width: 3rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+display: none; 
+ }
+
+ .presentacion__texto{
+
+        background-color: beige;
+ }
+
+@media(min-width: 810px){
+    .presentacion{
+        display: block;}
+}
+
+.horarios{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    display: none; 
+
+}
+
+.horarios__text{
+    background-color: beige;
+      color: green;
+}
+
+@media(min-width: 810px){
+    .horarios{
+        display: block;}
+}
+
+.ubicacion{
+    background-color: beige;
+    border: 2px solid black;
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 15px 15px;
+}
+
+.ubicacion__title{
+color: black;
+
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+}
+
+
+@media(min-width: 810px){
+     .ubicacion{
+    background-color: beige;
+    border: 2px solid black;
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 15px 15px;
+    }
+
+       .ubicacion__title{
+        color: green;
+    }
+}  
