@@ -49,7 +49,6 @@ a {
   box-sizing: border-box;
 }
 
-/* -----header ---*/
 .header {
   background-color: beige;
   padding: 15x;
@@ -76,6 +75,41 @@ a {
   }
   .header__nav {
     color: black;
+  }
+}
+.hero {
+  height: 96vh;
+  height: 500px;
+  background-image: url(../assets/fondohero10.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.hero__texto {
+  width: 25%;
+  height: 25%;
+  color: beige;
+  text-align: center;
+  background-color: green;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.hero__texto h2 {
+  width: 25%;
+  height: 25%;
+  text-align: center;
+}
+
+@media (min-width: 810px) {
+  .hero {
+    display: block;
   }
 }
 .footer {
@@ -137,6 +171,8 @@ a {
   background-color: beige;
   border: 2px solid black;
   display: flex;
+  flex-direction: row;
+  align-items: stretch;
 }
 
 .consulta__titulo {
@@ -146,7 +182,7 @@ a {
   height: 50%;
   margin: 20px auto;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .tarjeta__img {
@@ -168,7 +204,7 @@ a {
   justify-content: center;
   align-content: center;
   background-color: beige;
-  border: 12px solid black;
+  border: 2px solid black;
   padding: 15px;
   display: none;
 }
@@ -195,12 +231,12 @@ a {
 .horarios {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
   display: none;
 }
 
 .horarios__text {
   background-color: beige;
+  align-items: flex-end;
   color: green;
 }
 

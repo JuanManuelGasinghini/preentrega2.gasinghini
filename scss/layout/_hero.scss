@@ -10,7 +10,9 @@
         justify-content:center;
         align-items: center; 
         display: none;
-&__hero__texto{
+}
+
+.hero__texto{
     width: 25%;
     height: 25%;
         color: beige;
@@ -18,11 +20,18 @@
         background-color: green;
         padding: 30px;
         border-radius: 20px;
-&__hero__texto h2{
+}
+
+.hero__texto h2{
     width: 25%;
     height: 25%;
-text-align: center;}
-}
+text-align: center;
 }
 
 
+
+@media (min-width:810px){
+    .hero{
+        display: block;
+    }
+}
