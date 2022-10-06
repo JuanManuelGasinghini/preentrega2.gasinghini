@@ -1,0 +1,22 @@
+@mixin flex-center{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow-x: auto;
+    gap: 20px;
+}
+
+.consultorios_contenedor{
+    @include flex-center();
+    tarjeta_img{
+        width: 100%;
+        height: 200px;
+
+    }
+}
+
+
+.consultorios2_contenedor{
+    @include flex-center();
+    
+}

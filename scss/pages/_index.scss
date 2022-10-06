@@ -1,0 +1,15 @@
+$color-primario:linear-gradient(to left, white,rgb(158, 158, 94));
+$color-secundario: aqua;
+.boton-consulta{
+    background-color: blueviolet;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 20px;
+    &:hover{
+        border: blueviolet 2px solid;
+        background-color: white;
+        color: blueviolet;
+        padding: 15px 20px;
+    }
+}
+

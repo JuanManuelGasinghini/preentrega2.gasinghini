@@ -1,0 +1,16 @@
+@import "./utils/variables";
+
+@import "./base/reset";
+@import "./base/typo";
+
+@import "./layout/header";
+@import "./layout/footer";
+
+@import "./components/botones";
+@import "./components/cards.scss";
+
+@import "./pages/index";
+@import "./pages/consultorios";
+@import "./pages/quienessomos";
+@import "./pages/servicios";
+@import "./pages/contacto";
