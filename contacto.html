@@ -21,8 +21,9 @@
 <body>
     <header class="header">
         <h1 class="header__title">Consultorios Psicológicos 732</h1>
-        <nav class="header__nav">
-            <ul>
+    </header>
+        <nav>
+            <ul class="header__nav">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="quienessomos.html">Quiénes somos?</a></li>
                 <li><a href="servicios.html">Servicios</a></li>
@@ -30,47 +31,69 @@
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
-    </header>
+
 
     <section class="hero">
-        <div class="hero__texto">
+        <div class="hero__escrito">
             <h2>Terapia?</h2>
         </div>
     </section>
 
     <main>
 
-        <div class="contenedor_contac">
+<article class="encabezado__formulario">
+<h2>Formulario de Contacto</h2>
+</article>
+<form action="form.php" method="POST" class="speaker-form"> 
 
-            <div class="cajacons">Nombre y apellido</div>
-            <div class="cajacons">E-mail</div>
-            <div class="cajacons">Teléfono</div>
-            <div class="cajacons">Motivo</div>
+<div class="form-row">
+    <label for="nombre-usuario">Nombre y apellido</label>
+    <input type="text" id="nombre-usuario" name="usuario" placeholder="Nombre y apellido" required>
+</div>
 
-        </div>
+<div class="form-row">
+    <label for="email">E-mail</label>
+    <input type="email" id="email" name="email" placeholder="email" required>
+</div>
 
-        <div class="container-fluid rojo">
-            Un continer fluid!
-        </div>
+<fieldset class="legacy-form-row">
+    <legend>Categoría</legend>
+<input type="radio" name="categoria" id="profesional-consultante">
+<label for="profesional-consultante" class="radio-label">Porfesional</label>
+<input type="radio" name="categoria" id="profesional-consultante">
+<label for="profesional-consultante2" class="radio-label">Paciente</label>
+</fieldset>
 
-        <div class="container eventos">
-            Proximos Eventos
-        </div>
+    <div class="form-row">
+<label for="asunto">Asunto</label>
+<input type="Asunto" id="asunto" name="asunto" placeholder="Asunto" required>
+</div>
+
+<div class="form-row">
+<label for="mensaje"></label>
+    <textarea name="texto" id="mensaje" name="texto" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+</div>
+    <div class="form-button">
+    <label for="enviar"></label>
+    <input type="submit" id="enviar" name="enviar" value="Enviar">
+</div>
+
+
+</form>
+
 
     </main>
-
     <footer>
-
-        <section class="redes">
-            <h2 class="redes__title">Nuestras Redes Sociales</h2>
-            <div class="contenedor__redes">
-                <i class="bi bi-whatsapp" class="icon-redes"></i>
-                <i class="bi bi-instagram" class="icon-redes"></i>
-                <i class="bi bi-facebook" class="icon-redes"></i>
+        <section class="footercont">
+            <h4 class="footercont__title">Nuestras Redes Sociales</h4>
+            <div class="footercont__redes">
+                <i class="bi bi-whatsapp" class="footercont__redes--icon"></i>
+                <i class="bi bi-instagram" class="footercont__rededs--ico"></i>
+                <i class="bi bi-facebook" class="footercont__rededs--ico"></i>
             </div>
         </section>
-
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
         crossorigin="anonymous"></script>
